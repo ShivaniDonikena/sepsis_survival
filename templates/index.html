@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div id="navbar"> 
+            <a href="{{ url_for('about') }}" style="text-decoration: none; font-size: 20px; margin-top: 15px; margin-left: 100px;">About-Sepsis</a>
+            <a href="{{ url_for('predict') }}" style="text-decoration: none; font-size: 20px; margin-top: 15px;">Predict</a>   
+        </div> 
+    </header>
+    <h1 style="color: brown;"><b> WELCOME  TO SEPSIS  SURVIVAL  MINIMAL  CLINICAL  RECORDS!!</b></h1>
+    <p style="font-size: 30px;"> Sepsis is a serious condition in which the body responds improperly to an infection. The infection-fighting processes turn on the body, causing the organs to work poorly.
+
+        Sepsis may progress to septic shock. This is a dramatic drop in blood pressure that can damage the lungs, kidneys, liver and other organs. When the damage is severe, it can lead to death.
+        
+        Early treatment of sepsis improves chances for survival.</p>
+</body>
+</html>

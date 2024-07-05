@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+</head>
+<body>
+   <header>
+       <div  style="background-color: black; padding: 20px;">
+          <a href="{{ url_for('home') }}" style="color: white; text-decoration: none; float: right; font-size: 20px;">Home</a>
+          <a href= "{{ url_for('predict') }}" style="color: white; text-decoration: none; float: right; margin-right: 20px; font-size: 20px;">Predict</a>
+    
+       </div>
+       </header>
+    
+   <p style="font-size:x-large;">
+       Sepsis is a serious condition in which the body responds improperly to an infection. The infection-fighting processes turn on the body, causing the organs to work poorly.
+       
+       Sepsis may progress to septic shock. This is a dramatic drop in blood pressure that can damage the lungs, kidneys, liver and other organs. When the damage is severe, it can lead to death.
+       
+       Early treatment of sepsis improves chances for survival.
+        
+       </p>
+      <div style="text-align: center;">
+       <img src="{{url_for('static',filename='symptoms.jpg')}}"  width="1000px" height="500px">
+         <img style="margin-top: 50px;" src="{{url_for('static',filename='def.jpg')}}" width="1000px" height="500px" >
+           <img class="card-img-top" src="holder.js/100x180/" alt="">
+            </div>
+  
+</body>
+</html>
